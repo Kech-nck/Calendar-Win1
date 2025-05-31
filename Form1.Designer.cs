@@ -38,10 +38,12 @@
             label4 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             label6 = new Label();
-            label7 = new Label();
             timer2 = new System.Windows.Forms.Timer(components);
             button2 = new Button();
             button3 = new Button();
+            textBox2 = new TextBox();
+            button4 = new Button();
+            textBox3 = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -94,6 +96,7 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(310, 274);
             listBox1.TabIndex = 6;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // label4
             // 
@@ -111,14 +114,6 @@
             label6.Name = "label6";
             label6.Size = new Size(0, 15);
             label6.TabIndex = 10;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(249, 219);
-            label7.Name = "label7";
-            label7.Size = new Size(0, 15);
-            label7.TabIndex = 11;
             // 
             // timer2
             // 
@@ -144,14 +139,40 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(340, 11);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(145, 23);
+            textBox2.TabIndex = 15;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(481, 46);
+            button4.Name = "button4";
+            button4.Size = new Size(178, 23);
+            button4.TabIndex = 16;
+            button4.Text = "Сохранить изменения";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(491, 12);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(176, 23);
+            textBox3.TabIndex = 17;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(672, 370);
+            Controls.Add(textBox3);
+            Controls.Add(button4);
+            Controls.Add(textBox2);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label4);
             Controls.Add(listBox1);
@@ -179,9 +200,11 @@
         private System.Windows.Forms.Timer timer1;
         private Label label5;
         private Label label6;
-        private Label label7;
         private System.Windows.Forms.Timer timer2;
         private Button button2;
         private Button button3;
+        private TextBox textBox2;
+        private Button button4;
+        private TextBox textBox3;
     }
 }
